@@ -7,6 +7,7 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 class Car{
+    private boolean helllo = false;
     private volatile boolean waxOn = false;
     private ReentrantLock lock= new ReentrantLock();
     private Condition condition = lock.newCondition();
